@@ -119,7 +119,18 @@ body {
 .servicios {
   width: 100%;
   height: 800px;
-  background-color: blue; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .serviciosContenedor {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px; }
+    .serviciosContenedorItem {
+      width: 100px;
+      border: 1px solid black; }
 
 .ubicacion {
   width: 100%;
