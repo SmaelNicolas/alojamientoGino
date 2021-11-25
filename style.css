@@ -10,8 +10,120 @@ body {
 
 .navBar {
 	width: 100%;
-	height: 200px;
-	background-color: green;
+	height: 100px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	background-color: yellow;
+	z-index: 10;
+}
+
+.navBarLogo {
+	width: 30%;
+	width: 40px;
+	height: 40px;
+}
+
+.navBarLogoImg {
+	width: 40px;
+	height: 40px;
+}
+
+.navBarMenuIcon {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	box-shadow: 0 10px 20px rgb(0 0 0 / 8%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.navBarMenuIconSpan {
+	position: absolute;
+	width: 40px;
+	height: 4px;
+	background-color: black;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+
+.navBarMenuIcon span:nth-child(1) {
+	transform: translateY(-15px);
+	width: 25px;
+	left: 5px;
+}
+.navBarMenuIcon.active span:nth-child(1) {
+	width: 40px;
+	transform: translateY(0px) rotate(45deg);
+	transition-delay: 0.125s;
+}
+
+.navBarMenuIcon span:nth-child(2) {
+	transform: translateY(15px);
+	width: 15px;
+	left: 5px;
+}
+.navBarMenuIcon.active span:nth-child(2) {
+	width: 40px;
+	transform: translateY(0px) rotate(315deg);
+	transition-delay: 0.25s;
+}
+
+.navBarMenuIcon.active span:nth-child(3) {
+	transform: translateX(60px);
+}
+
+.navBarLista {
+	position: absolute;
+	top: 100px;
+
+	width: 100%;
+	min-height: 100vh;
+
+	display: none;
+	flex-direction: column;
+
+	justify-content: start;
+	align-items: center;
+
+	padding-top: 50px;
+	gap: 4rem;
+
+	z-index: 9;
+}
+
+@keyframes aparecer {
+	from {
+		right: -1000px;
+	}
+	to {
+		right: 0px;
+	}
+}
+@keyframes desaparecer {
+	from {
+		right: 0px;
+	}
+	to {
+		right: -1000px;
+	}
+}
+
+.navBarListaLi {
+	list-style: none;
+}
+
+.navBarListaLink {
+	text-decoration: none;
+}
+
+.navBarListaLink:visited {
 }
 
 .galeriaContainer {
