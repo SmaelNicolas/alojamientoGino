@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- MAp -->
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -78,87 +82,107 @@
         <h1 class="serviciosTitulo">Comodidas y Servicios</h1>
 
         <div class="serviciosContenedor">
-            <p class="serviciosContenedorItem">2 Habitaciones</p>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    1 Cama Matrimonial</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    3 Camas Simples</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Cocina</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Living</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Comedor</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Baño</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Aire Acondicionado</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Wifi</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Cocina Equipada</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Microondas</p>
-            </span>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-home"></i></span> <span class="serviciosContenedorItemTexto">
+                    2 Habitaciones
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-bed"></i></span> <span class="serviciosContenedorItemTexto">
+                    1 Cama Matrimonial
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-bed"></i></span> <span class="serviciosContenedorItemTexto">
+                    3 Camas Simples
+                </span>
+            </p>
+
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-utensils"></i></span> <span class="serviciosContenedorItemTexto">
+                    Cocina Equipada
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-couch"></i></span> <span class="serviciosContenedorItemTexto">
+                    Living
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-house-user"></i></span> <span class="serviciosContenedorItemTexto">
+                    Comedor
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-house-user"></i></span> <span class="serviciosContenedorItemTexto">
+                    Baño
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-fan"></i></span> <span class="serviciosContenedorItemTexto">
+                    Aire Acondicionado
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-wifi"></i></span> <span class="serviciosContenedorItemTexto">
+                    Wifi
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-utensils"></i></span> <span class="serviciosContenedorItemTexto">
+                    Microondas
+                </span>
+            </p>
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
                         class="fas fa-paw"></i></span> <span class="serviciosContenedorItemTexto">
-                    Se permiten Mascotas</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Estacionamiento dentro de la Propiedad</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Pileta</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Ropa de Cama</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Calefaccion</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Parrilla exterior</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Ropa Blanca</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    TV</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Parque de 40mts Privado</p>
-            </span>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Mesas y Sillas de exterior</p>
-            </span>
+                    Se permiten Mascotas
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-car"></i></span> <span class="serviciosContenedorItemTexto">
+                    Estacionamiento dentro de la Propiedad
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-swimmer"></i></span> <span class="serviciosContenedorItemTexto">
+                    Pileta
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-bed"></i></span> <span class="serviciosContenedorItemTexto">
+                    Ropa de Cama
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-shower"></i></span> <span class="serviciosContenedorItemTexto">
+                    Ropa Blanca
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-fire-alt"></i></span> <span class="serviciosContenedorItemTexto">
+                    Calefaccion
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-bacon"></i></span> <span class="serviciosContenedorItemTexto">
+                    Parrilla exterior
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-tv"></i></span> <span class="serviciosContenedorItemTexto">
+                    TV
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-tree"></i></span> <span class="serviciosContenedorItemTexto">
+                    Parque de 40mts Privado
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas fa-chair"></i></span> <span class="serviciosContenedorItemTexto">
+                    Mesas y Sillas de exterior
+                </span>
+            </p>
 
         </div>
     </section>
@@ -168,10 +192,43 @@
 
 
 
-    <section class="ubicacion" id="ubicacion"></section>
-    <footer class="contacto" id="contacto"></footer>
+    <section class="ubicacion" id="ubicacion">
+        <h2 class="ubicacionTitulo">UBICACION</h2>
+        <p class="ubicacionTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi inventore neque ad
+            sed harum sunt? Deleniti, consectetur quis veniam eaque quibusdam animi iure assumenda. Est unde sit minus
+            eveniet veritatis quibusdam id quia! Maiores eligendi cupiditate vero pariatur id sequi alias accusamus
+            dolores. A in commodi ducimus, aliquid est natus perferendis nihil veritatis. A asperiores culpa aliquid
+            quo, officia sed laboriosam nostrum consequuntur temporibus pariatur eligendi ex voluptates voluptatem esse
+            ratione quibusdam minus dolore eius, perferendis assumenda. Voluptas voluptate atque eaque pariatur delectus
+            numquam labore mollitia molestias vitae. Modi facilis recusandae quam quod voluptate dignissimos non amet
+            fugit eius sapiente dolorem reiciendis in, veritatis soluta? Quod officiis nemo deserunt doloribus
+            laboriosam deleniti sapiente nesciunt consequatur alias numquam, reprehenderit non commodi aspernatur, esse
+            repellendus nobis debitis ab quo soluta minima aliquam sunt, beatae eos. Quidem unde ea nam impedit. At odio
+            exercitationem numquam beatae asperiores tenetur sint nesciunt, unde dicta!</p>
+
+        <div id="map" class="map"></div>
+    </section>
+
+    <footer class="contacto" id="contacto">
+        <h2 class="contactoTitulo">CONTACTO</h2>
+        <div class="contactoRedes">
+
+            <p>Whatsapp</p>
+            <p>Booking</p>
+            <p>Mail</p>
+            <p>Otro</p>
+        </div>
+        <div class="contactoFormulario">
+            <form action="https://formsubmit.co/nico.smael@gmail.com" method="POST">
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
 
 
+    <script src="./map.js"></script>
     <script src="./script.js"></script>
 </body>
 
