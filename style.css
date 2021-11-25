@@ -1,174 +1,132 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-	width: calc(100vw - (100vw - 100%));
-}
+  width: calc(100vw - (100vw - 100%)); }
 
 .navBar {
-	width: 100%;
-	height: 100px;
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	overflow: hidden;
-	background-color: yellow;
-	z-index: 10;
-}
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 10; }
 
 .navBarLogo {
-	width: 30%;
-	width: 40px;
-	height: 40px;
-}
+  width: 30%;
+  width: 40px;
+  height: 40px; }
 
 .navBarLogoImg {
-	width: 40px;
-	height: 40px;
-}
+  width: 40px;
+  height: 40px; }
 
 .navBarMenuIcon {
-	position: relative;
-	width: 50px;
-	height: 50px;
-	box-shadow: 0 10px 20px rgb(0 0 0 / 8%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	overflow: hidden;
-}
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden; }
 
 .navBarMenuIconSpan {
-	position: absolute;
-	width: 40px;
-	height: 4px;
-	background-color: black;
-	border-radius: 4px;
-	transition: 0.5s;
-}
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 4px;
+  transition: 0.5s; }
 
 .navBarMenuIcon span:nth-child(1) {
-	transform: translateY(-15px);
-	width: 25px;
-	left: 5px;
-}
+  transform: translateY(-15px);
+  width: 25px;
+  left: 5px; }
+
 .navBarMenuIcon.active span:nth-child(1) {
-	width: 40px;
-	transform: translateY(0px) rotate(45deg);
-	transition-delay: 0.125s;
-}
+  width: 40px;
+  transform: translateY(0px) rotate(45deg);
+  transition-delay: 0.125s; }
 
 .navBarMenuIcon span:nth-child(2) {
-	transform: translateY(15px);
-	width: 15px;
-	left: 5px;
-}
+  transform: translateY(15px);
+  width: 15px;
+  left: 5px; }
+
 .navBarMenuIcon.active span:nth-child(2) {
-	width: 40px;
-	transform: translateY(0px) rotate(315deg);
-	transition-delay: 0.25s;
-}
+  width: 40px;
+  transform: translateY(0px) rotate(315deg);
+  transition-delay: 0.25s; }
 
 .navBarMenuIcon.active span:nth-child(3) {
-	transform: translateX(60px);
-}
+  transform: translateX(60px); }
 
 .navBarLista {
-	position: absolute;
-	top: 100px;
-
-	width: 100%;
-	min-height: 100vh;
-
-	display: none;
-	flex-direction: column;
-
-	justify-content: start;
-	align-items: center;
-
-	padding: 50px 0px 0px 0px;
-
-	gap: 4rem;
-
-	z-index: 9;
-}
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 50px 0px 0px 0px;
+  gap: 4rem;
+  z-index: 9; }
 
 @keyframes aparecer {
-	from {
-		right: -1000px;
-	}
-	to {
-		right: 0px;
-	}
-}
+  from {
+    right: -1000px; }
+  to {
+    right: 0px; } }
+
 @keyframes desaparecer {
-	from {
-		right: 0px;
-	}
-	to {
-		right: -1000px;
-	}
-}
+  from {
+    right: 0px; }
+  to {
+    right: -1000px; } }
 
 .navBarListaLi {
-	list-style: none;
-}
+  list-style: none; }
 
 .navBarListaLink {
-	text-decoration: none;
-}
-
-.navBarListaLink:visited {
-}
+  text-decoration: none; }
 
 .galeriaContainer {
-	background-color: red;
-	width: 100%;
-	height: 80vh;
-}
+  background-color: red;
+  width: 100%;
+  height: 80vh; }
 
 .carousel {
-	max-width: 800px;
-	height: 80vh;
-
-	margin: 0 auto;
-}
+  max-width: 800px;
+  height: 80vh;
+  margin: 0 auto; }
 
 .carousel-inner {
-	max-width: 800px;
-	height: 80vh;
-
-	margin: 0 auto;
-}
+  max-width: 800px;
+  height: 80vh;
+  margin: 0 auto; }
 
 .carousel-item-img {
-	max-width: 800px;
-	height: 80vh;
-}
-
-.carousel-item {
-}
+  max-width: 800px;
+  height: 80vh; }
 
 .servicios {
-	width: 100%;
-	height: 800px;
-	background-color: blue;
-}
+  width: 100%;
+  height: 800px;
+  background-color: blue; }
 
 .ubicacion {
-	width: 100%;
-	height: 400px;
-	background-color: slateblue;
-}
+  width: 100%;
+  height: 400px;
+  background-color: slateblue; }
 
 .contacto {
-	width: 100%;
-	height: 300px;
-	background-color: teal;
-}
+  width: 100%;
+  height: 300px;
+  background-color: teal; }
