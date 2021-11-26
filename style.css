@@ -7,11 +7,15 @@ body {
   width: calc(100vw - (100vw - 100%)); }
 
 .map {
-  min-height: 300px;
-  max-height: 500px;
   min-width: 300px;
   max-width: 800px;
-  margin: 0 auto; }
+  min-height: 300px;
+  max-height: 400px; }
+
+.tituloH1 {
+  text-align: center;
+  font-size: 2em;
+  color: magenta; }
 
 .navBar {
   width: 100%;
@@ -84,7 +88,8 @@ body {
   align-items: center;
   padding: 50px 0px 0px 0px;
   gap: 4rem;
-  z-index: 9; }
+  z-index: 9;
+  background-color: black; }
 
 @keyframes aparecer {
   from {
@@ -118,7 +123,8 @@ body {
     align-items: center;
     padding: 0;
     margin-right: 20px;
-    gap: 3rem; } }
+    gap: 3rem;
+    background-color: white; } }
 
 .galeriaContainer {
   background-color: red;
@@ -156,9 +162,13 @@ body {
       height: 50px;
       justify-self: center;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       border: 1px solid black; }
+      .serviciosContenedorItemIcono {
+        width: 20%;
+        text-align: center;
+        color: blue; }
       .serviciosContenedorItemTexto {
         width: 80%;
         color: red; }
