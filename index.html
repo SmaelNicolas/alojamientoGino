@@ -43,7 +43,7 @@
         </ul>
     </nav>
 
-    <section class="galeriaContainer" id="galeria">
+    <!-- <section class="galeriaContainer" id="galeria">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -75,7 +75,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="servicios" id="servicios">
@@ -219,31 +219,55 @@
             eveniet veritatis quibusdam id quia! Maiores eligendi cupiditate vero pariatur id sequi alias accusamus
             dolores. A in commodi ducimus, aliquid est natus perferendis nihil veritatis. A asperiores culpa aliquid
             quo, officia sed laboriosam nostrum consequuntur temporibus pariatur eligendi ex voluptates voluptatem esse
-            ratione quibusdam minus dolore eius, perferendis assumenda. Voluptas voluptate atque eaque pariatur delectus
-            numquam labore mollitia molestias vitae. Modi facilis recusandae quam quod voluptate dignissimos non amet
-            fugit eius sapiente dolorem reiciendis in, veritatis soluta? Quod officiis nemo deserunt doloribus
-            laboriosam deleniti sapiente nesciunt consequatur alias numquam, reprehenderit non commodi aspernatur, esse
-            repellendus nobis debitis ab quo soluta minima aliquam sunt, beatae eos. Quidem unde ea nam impedit. At odio
-            exercitationem numquam beatae asperiores tenetur sint nesciunt, unde dicta!</p>
+            ratione quibusdam minus dolore eius.
+        </p>
 
         <div id="map" class="map"></div>
     </section>
 
+
     <footer class="contacto" id="contacto">
         <h2 class="tituloH1">CONTACTO</h2>
-        <div class="contactoRedes">
+        <div class="contactoContainer">
 
-            <p>Whatsapp</p>
-            <p>Booking</p>
-            <p>Mail</p>
-            <p>Otro</p>
-        </div>
-        <div class="contactoFormulario">
+            <div class="contactoRedes">
+
+                <p>Whatsapp</p>
+                <p>Booking</p>
+                <p>Mail</p>
+                <p>Otro</p>
+            </div>
             <!-- <form action="https://formsubmit.co/nico.smael@gmail.com" method="POST"> -->
-            <form action="">
-                <input type="text" name="name" required>
-                <input type="email" name="email" required>
-                <button type="submit">Send</button>
+            <form action="" class="contactoFormulario">
+                <input class="contactoFormularioInputs" type="text" name="Nombre" placeholder="Apellido y Nombre"
+                    required>
+                <input class="contactoFormularioInputs" type="email" name="email" placeholder="Correo Electronico"
+                    required>
+                <input class="contactoFormularioInputs" type="number" name="Telefono" placeholder="Telefono" required>
+                <input class="contactoFormularioInputs" type="number" name="Cantidad de Personas"
+                    placeholder="Cantidad de Personas" required>
+                <input class="contactoFormularioInputs" type="number" name="Noches" placeholder="Cantidad de Noches"
+                    required>
+                <input class="contactoFormularioInputs" type="text" name="Fecha Ingreso"
+                    placeholder="Fecha de Ingreso  Dia/Mes/Año" required>
+                <input class="contactoFormularioInputs" type="text" name="Fecha Salida"
+                    placeholder="Fecha de Salida  Dia/Mes/Año" required>
+                <input class="contactoFormularioInputs contactoFormularioInputsMensaje" type="text" name="Mensaje"
+                    placeholder="Mensaje" required>
+                <!-- <input type="email" name="email" required> -->
+
+                <!-- FORMA EN QUE LLEGAN LOS MAILS -->
+                <input type="hidden" name="_template" value="table">
+
+                <!-- PREVENIR SPAMS -->
+                <input type="text" name="_honey" style="display:none">
+
+                <!-- NO CAPTCHA -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- MENSAJE AUTOMATICO DE RESPUESTA -->
+                <input type="hidden" name="_autoresponse" value="your custom message">
+                <button class="contactoFormularioSubmit" type="submit">Send</button>
             </form>
         </div>
     </footer>

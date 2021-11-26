@@ -15,17 +15,19 @@ body {
 .tituloH1 {
   text-align: center;
   font-size: 2em;
-  color: magenta; }
+  color: magenta;
+  padding: 40px 0px; }
 
 .navBar {
   width: 100%;
-  height: 100px;
+  height: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  z-index: 10; }
+  z-index: 10;
+  background-color: #0d0d0f; }
 
 .navBarLogo {
   width: 30%;
@@ -50,7 +52,7 @@ body {
   position: absolute;
   width: 40px;
   height: 4px;
-  background-color: black;
+  background-color: white;
   border-radius: 4px;
   transition: 0.5s; }
 
@@ -79,7 +81,7 @@ body {
 
 .navBarLista {
   position: absolute;
-  top: 100px;
+  top: 50px;
   width: 100%;
   min-height: 100vh;
   display: none;
@@ -89,7 +91,7 @@ body {
   padding: 50px 0px 0px 0px;
   gap: 4rem;
   z-index: 9;
-  background-color: black; }
+  background-color: #0d0d0f; }
 
 @keyframes aparecer {
   from {
@@ -110,6 +112,9 @@ body {
   text-decoration: none; }
 
 @media only screen and (min-width: 500px) {
+  .navBar {
+    position: sticky;
+    top: 0; }
   .navBarMenuIcon {
     display: none; }
   .navBarLista {
@@ -122,9 +127,8 @@ body {
     justify-content: end;
     align-items: center;
     padding: 0;
-    margin-right: 20px;
-    gap: 3rem;
-    background-color: white; } }
+    margin: 0px 20px 0px 0px;
+    gap: 3rem; } }
 
 .galeriaContainer {
   background-color: red;
@@ -148,17 +152,19 @@ body {
 .servicios {
   width: 100%;
   height: auto;
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.932); }
   .serviciosContenedor {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
     gap: 10px; }
     .serviciosContenedorItem {
-      width: 200px;
+      width: 150px;
       height: 50px;
       justify-self: center;
       display: flex;
@@ -171,14 +177,73 @@ body {
         color: blue; }
       .serviciosContenedorItemTexto {
         width: 80%;
-        color: red; }
+        color: #0d0d0f; }
+
+@media only screen and (min-width: 500px) {
+  .serviciosContenedor {
+    width: 60%;
+    gap: 20px; } }
 
 .ubicacion {
   width: 100%;
   height: auto;
-  background-color: slateblue; }
+  padding: 20px 0px;
+  background-color: #0d0d0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .ubicacionTexto {
+    min-width: 310px;
+    max-width: 1100px;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: justify;
+    color: rgba(15, 209, 128, 0.986); }
 
 .contacto {
   width: 100%;
-  height: 300px;
-  background-color: teal; }
+  height: auto;
+  background-color: #0d0d0f;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contactoContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px; }
+  .contactoRedes {
+    min-width: 300px;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0f;
+    color: white; }
+  .contacto .contactoFormulario {
+    min-width: 300px;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0f;
+    gap: 3px; }
+    .contacto .contactoFormularioInputs {
+      width: 100%;
+      height: 30px;
+      padding-left: 10px; }
+      .contacto .contactoFormularioInputsMensaje {
+        height: 150px; }
+    .contacto .contactoFormularioSubmit {
+      width: 100px; }
