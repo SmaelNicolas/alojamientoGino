@@ -7,8 +7,10 @@ body {
   width: calc(100vw - (100vw - 100%)); }
 
 .map {
-  height: 400px;
-  width: 50%;
+  min-height: 300px;
+  max-height: 500px;
+  min-width: 300px;
+  max-width: 800px;
   margin: 0 auto; }
 
 .navBar {
@@ -139,19 +141,27 @@ body {
 
 .servicios {
   width: 100%;
-  height: 800px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center; }
   .serviciosContenedor {
-    width: 80%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 5px; }
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; }
     .serviciosContenedorItem {
-      width: 100px;
+      width: 200px;
+      height: 50px;
+      justify-self: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border: 1px solid black; }
+      .serviciosContenedorItemTexto {
+        width: 80%;
+        color: red; }
 
 .ubicacion {
   width: 100%;
