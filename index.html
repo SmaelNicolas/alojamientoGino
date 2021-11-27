@@ -35,13 +35,20 @@
             <span class="navBarMenuIconSpan"></span>
             <span class="navBarMenuIconSpan"></span>
         </div>
-        <ul class="navBarLista" id="navBarLista">
+        <ul class="navBarLista">
             <li class="navBarListaLi"><a class="navBarListaLink" href="#galeria">Galeria</a></li>
             <li class="navBarListaLi"><a class="navBarListaLink" href="#servicios">Servicios</a></li>
             <li class="navBarListaLi"><a class="navBarListaLink" href="#ubicacion">Ubicación</a></li>
             <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Contacto</a></li>
         </ul>
+
     </nav>
+    <ul class="navBarListaResponsive" id="navBarLista">
+        <li class="navBarListaLi"><a class="navBarListaLink" href="#galeria">Galeria</a></li>
+        <li class="navBarListaLi"><a class="navBarListaLink" href="#servicios">Servicios</a></li>
+        <li class="navBarListaLi"><a class="navBarListaLink" href="#ubicacion">Ubicación</a></li>
+        <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Contacto</a></li>
+    </ul>
 
     <!-- <section class="galeriaContainer" id="galeria">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -226,17 +233,14 @@
     </section>
 
 
+
+    <div id="myButton"></div>
+
+
     <footer class="contacto" id="contacto">
         <h2 class="tituloH1">CONTACTO</h2>
         <div class="contactoContainer">
 
-            <div class="contactoRedes">
-
-                <p>Whatsapp</p>
-                <p>Booking</p>
-                <p>Mail</p>
-                <p>Otro</p>
-            </div>
             <!-- <form action="https://formsubmit.co/nico.smael@gmail.com" method="POST"> -->
             <form action="" class="contactoFormulario">
                 <input class="contactoFormularioInputs" type="text" name="Nombre" placeholder="Apellido y Nombre"
@@ -272,9 +276,11 @@
         </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./map.js"></script>
     <script src="./script.js"></script>
+    <script src="./wtsp.js"></script>
 </body>
 
 </html>
