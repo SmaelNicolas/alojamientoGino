@@ -66,8 +66,8 @@ body {
 
 .wavesContainer {
   width: 100%;
-  background: #0300f5;
-  background: linear-gradient(0deg, #0300f5 1%, rgba(131, 251, 247, 0.856) 38%); }
+  background: rgba(131, 251, 247, 0.856);
+  background: linear-gradient(0deg, rgba(131, 251, 247, 0.856) 1%, rgba(131, 251, 247, 0.856) 38%); }
 
 .waves {
   position: relative;
