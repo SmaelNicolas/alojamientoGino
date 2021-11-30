@@ -13,8 +13,10 @@ body {
   src: url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"); }
 
 .map {
-  width: 295px;
-  height: 200px; }
+  width: 300px;
+  height: 200px;
+  padding: 0;
+  margin: 0; }
 
 .map li {
   display: none; }
@@ -24,22 +26,22 @@ body {
 
 @media only screen and (min-width: 400px) {
   .map {
-    width: 375px;
+    width: 380px;
     height: 250px; } }
 
 @media only screen and (min-width: 500px) {
   .map {
-    width: 475px;
+    width: 480px;
     height: 300px; } }
 
 @media only screen and (min-width: 700px) {
   .map {
-    width: 675px;
+    width: 680px;
     height: 400px; } }
 
 @media only screen and (min-width: 900px) {
   .map {
-    width: 875px;
+    width: 880px;
     height: 400px; } }
 
 .tituloH1 {
@@ -162,13 +164,14 @@ body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  z-index: 10;
-  background-color: #0d0d0f; }
+  z-index: 10; }
 
 .navBarLogo {
-  width: 30%;
-  width: 40px;
-  height: 40px; }
+  width: auto;
+  height: 35px;
+  display: flex;
+  justify-content: start;
+  align-items: center; }
 
 .navBarLogoImg {
   width: 40px;
@@ -249,40 +252,61 @@ body {
 .navBarListaLink {
   text-decoration: none; }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 650px) {
   .navBarMenuIcon {
     display: none; }
   .navBarLista {
     position: unset;
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: auto;
     height: auto;
     min-height: unset;
     justify-content: end;
     align-items: center;
     padding: 0;
     margin: 0px 20px 0px 0px;
-    gap: 3rem; } }
+    gap: 2rem; } }
 
 .galeriaContainer {
-  background-color: red;
   width: 100%;
-  height: 80vh; }
+  height: auto; }
 
 .carousel {
-  max-width: 800px;
-  height: 80vh;
-  margin: 0 auto; }
-
-.carousel-inner {
-  max-width: 800px;
-  height: 80vh;
-  margin: 0 auto; }
+  width: 50vw;
+  max-height: 80vh;
+  margin: 0 auto;
+  margin-top: 50px; }
 
 .carousel-item-img {
-  max-width: 800px;
-  height: 80vh; }
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto; }
+
+.carousel-control-prev-icon {
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 50%;
+  color: white; }
+  .carousel-control-prev-icon:hover {
+    transition: 0.5s;
+    background-color: black; }
+
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 50%;
+  color: white; }
+  .carousel-control-next-icon:hover {
+    transition: 0.5s;
+    background-color: black; }
+
+@media only screen and (min-width: 325px) and (max-width: 1000px) {
+  .carousel {
+    width: 90vw;
+    height: 60vh;
+    background-color: green; }
+  .carousel-item-img {
+    width: 100vw;
+    height: 60vh; } }
 
 .servicios {
   width: 100%;
@@ -291,8 +315,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.932); }
+  align-items: center; }
   .serviciosContenedor {
     width: 100%;
     display: grid;
@@ -323,7 +346,6 @@ body {
   width: 100%;
   height: auto;
   padding: 20px 0px;
-  background-color: #0d0d0f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -334,8 +356,7 @@ body {
     padding: 10px;
     letter-spacing: 1px;
     font-size: 20px;
-    text-align: justify;
-    color: rgba(15, 209, 128, 0.986); }
+    text-align: justify; }
 
 .contacto {
   width: 100%;
@@ -349,8 +370,7 @@ body {
   .contactoContainer {
     width: 80%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 50px; }
@@ -362,8 +382,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0d0d0f;
+    background-color: blue;
     color: white; }
+  .contacto .redesIconos {
+    color: green;
+    font-size: 50px; }
   .contacto .contactoFormulario {
     min-width: 300px;
     max-width: 900px;
