@@ -1,6 +1,6 @@
 $(function () {
 	$("#myButton").floatingWhatsApp({
-		phone: "",
+		phone: "542914123018",
 		popupMessage: "Hola, en que puedo ayudarte?",
 		message: " ",
 		showPopup: true,
@@ -18,7 +18,7 @@ $(function () {
 			a,
 			i = v.extend(
 				{
-					phone: "",
+					phone: "542914123018",
 					message: "",
 					size: "72px",
 					backgroundColor: "#25D366",

@@ -51,6 +51,22 @@
         <li class="navBarListaLi"><a class="navBarListaLink" href="#ubicacion">Ubicación</a></li>
         <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Contacto</a></li>
     </ul>
+    <!--Waves Container-->
+    <div class="wavesContainer">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
 
     <section class="galeriaContainer" id="galeria">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -184,7 +200,7 @@
 
 
     <section class="servicios" id="servicios">
-        <h1 class="tituloH1">Comodidades y Servicios</h1>
+        <h1 class="tituloH1">Servicios</h1>
 
         <div class="serviciosContenedor">
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
@@ -309,7 +325,9 @@
                 </span>
             </p>
 
+
         </div>
+
     </section>
 
 
@@ -328,11 +346,13 @@
         </p>
 
         <div id="map" class="map"></div>
+
     </section>
 
 
 
     <div id="myButton"></div>
+
 
 
     <footer class="contacto" id="contacto">

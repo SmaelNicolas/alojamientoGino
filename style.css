@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap");
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 * {
   margin: 0;
   padding: 0;
@@ -53,12 +54,65 @@ body {
     width: 880px;
     height: 400px; } }
 
+.wavesContainer {
+  width: 100%;
+  background: #0300f5;
+  background: linear-gradient(0deg, #0300f5 1%, rgba(131, 251, 247, 0.856) 38%); }
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px; }
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white; }
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; }
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s; }
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s; }
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s; }
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s; }
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0); }
+  100% {
+    transform: translate3d(85px, 0, 0); } }
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 100px; }
+  .content {
+    height: 30vh; } }
+
 .tituloH1 {
+  font-family: Cardiff;
+  color: rgba(0, 0, 255, 0.76);
   text-align: center;
   font-size: 50px;
-  color: rgba(0, 0, 255, 0.76);
-  font-family: Cardiff;
-  font-weight: 400;
   padding: 40px 0px; }
 
 .floating-wpp {
@@ -174,7 +228,7 @@ body {
   align-items: center;
   overflow: hidden;
   z-index: 10;
-  background-color: white; }
+  background-color: rgba(131, 251, 247, 0.89); }
 
 .navBarLogo {
   width: auto;
@@ -206,7 +260,7 @@ body {
   position: absolute;
   width: 40px;
   height: 4px;
-  background-color: black;
+  background-color: rgba(0, 0, 255, 0.76);
   border-radius: 4px;
   transition: 0.5s; }
 
@@ -247,7 +301,7 @@ body {
   padding: 50px 0px 0px 0px;
   gap: 4rem;
   z-index: 9;
-  background-color: #0d0d0f; }
+  background-color: rgba(131, 251, 247, 0.89); }
 
 @keyframes aparecer {
   from {
@@ -265,12 +319,13 @@ body {
   list-style: none; }
 
 .navBarListaLink {
+  color: rgba(0, 0, 255, 0.76);
   text-decoration: none; }
 
 .navBarListaLink:visited {
-  color: black; }
+  color: rgba(0, 0, 255, 0.76); }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 680px) {
   .navBarMenuIcon {
     display: none; }
   .navBarLista {
@@ -288,18 +343,21 @@ body {
 
 .galeriaContainer {
   width: 100%;
-  height: auto; }
+  height: auto;
+  padding: 20px 0px 100px 0px; }
 
 .carousel {
   width: 50vw;
   max-height: 80vh;
   margin: 0 auto;
-  margin-top: 50px; }
+  margin-top: 50px;
+  border-radius: 10px; }
 
 .carousel-item-img {
   width: 80vw;
   height: 80vh;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-radius: 10px; }
 
 .carousel-control-prev-icon {
   border-radius: 50%;
@@ -312,8 +370,7 @@ body {
 @media only screen and (min-width: 325px) and (max-width: 1000px) {
   .carousel {
     width: 90vw;
-    height: 60vh;
-    background-color: green; }
+    height: 60vh; }
   .carousel-item-img {
     width: 100vw;
     height: 60vh; } }
@@ -321,11 +378,12 @@ body {
 .servicios {
   width: 100%;
   height: auto;
-  padding: 20px 0px;
+  padding: 20px 0px 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  border-top: 2px solid rgba(131, 251, 247, 0.89); }
   .serviciosContenedor {
     width: 100%;
     display: grid;
@@ -355,11 +413,12 @@ body {
 .ubicacion {
   width: 100%;
   height: auto;
-  padding: 20px 0px;
+  padding: 20px 0px 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-top: 2px solid rgba(131, 251, 247, 0.89); }
   .ubicacionTexto {
     min-width: 310px;
     max-width: 1100px;
@@ -371,12 +430,12 @@ body {
 .contacto {
   width: 100%;
   height: auto;
-  background-color: #0d0d0f;
-  padding: 20px 0px;
+  padding: 20px 0px 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-top: 2px solid rgba(131, 251, 247, 0.89); }
   .contactoContainer {
     width: 80%;
     display: flex;
