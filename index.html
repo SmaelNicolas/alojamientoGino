@@ -28,13 +28,15 @@
 
 <body>
 
-    <div class="aviso">Check In: 13:00 a 22:00 / Check Out: 00:00 a 10:00</div>
+    <div class="aviso" id="top">Check In: 13:00 a 22:00 / Check Out: 00:00 a 10:00</div>
 
 
-    <nav class="navBar">
-        <div class="navBarLogo">
-            <h1 class="navBarLogoTexto">Pinar del Este</h1>
-        </div>
+    <nav class="navBar" id="navbar">
+        <a class="navBarLogoLink" href="#top">
+            <div class="navBarLogo">
+                <h1 class="navBarLogoTexto">Pinar del Este</h1>
+            </div>
+        </a>
         <div class="navBarMenuIcon" id="menuButton">
             <span class="navBarMenuIconSpan"></span>
             <span class="navBarMenuIconSpan"></span>
@@ -44,7 +46,7 @@
             <li class="navBarListaLi"><a class="navBarListaLink" href="#galeria">Galeria</a></li>
             <li class="navBarListaLi"><a class="navBarListaLink" href="#servicios">Servicios</a></li>
             <li class="navBarListaLi"><a class="navBarListaLink" href="#ubicacion">Ubicación</a></li>
-            <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Contacto</a></li>
+            <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Redes</a></li>
         </ul>
 
     </nav>
@@ -52,7 +54,7 @@
         <li class="navBarListaLi"><a class="navBarListaLink" href="#galeria">Galeria</a></li>
         <li class="navBarListaLi"><a class="navBarListaLink" href="#servicios">Servicios</a></li>
         <li class="navBarListaLi"><a class="navBarListaLink" href="#ubicacion">Ubicación</a></li>
-        <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Contacto</a></li>
+        <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Redes</a></li>
     </ul>
     <!--Waves Container-->
     <div class="wavesContainer">
@@ -203,13 +205,19 @@
 
 
     <section class="servicios" id="servicios">
-        <h1 class="tituloH1">Servicios</h1>
+        <h1 class="tituloH1">SERVICIOS</h1>
 
         <div class="serviciosContenedor">
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
                         class="fas serviciosContenedorItemIcono fa-home"></i></span> <span
                     class="serviciosContenedorItemTexto">
                     2 Habitaciones
+                </span>
+            </p>
+            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
+                        class="fas serviciosContenedorItemIcono fa-home"></i></span> <span
+                    class="serviciosContenedorItemTexto">
+                    4 Personas
                 </span>
             </p>
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
@@ -246,7 +254,7 @@
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
                         class="fas serviciosContenedorItemIcono fa-fan"></i></span> <span
                     class="serviciosContenedorItemTexto">
-                    Aire Acondicionado
+                    Split
                 </span>
             </p>
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
@@ -265,13 +273,13 @@
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
                         class="fas serviciosContenedorItemIcono fa-paw"></i></span> <span
                     class="serviciosContenedorItemTexto">
-                    No se permiten manscotas
+                    No Mascotas
                 </span>
             </p>
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
                         class="fas serviciosContenedorItemIcono fa-car"></i></span> <span
                     class="serviciosContenedorItemTexto">
-                    Estacionamiento
+                    Parking
                 </span>
             </p>
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
@@ -316,16 +324,13 @@
     </section>
 
 
-
-
-
-
     <section class="ubicacion" id="ubicacion">
         <h2 class="tituloH1">UBICACION</h2>
-        <p class="ubicacionTexto">Complejo de Cabañas ubicado frente al mar , sobre la Av. Gonzalez Martínez. Ademas se
-            situa a 2 cuadras del centro de Pehuen-co, que hace que sea un
-            excelente lugar para disfrutar en
-            familia.
+        <p class="ubicacionTexto">El complejo Pinar del Este se encuentran en Balneario Pehuén-Có, en la provincia de
+            Buenos Aires, y ofrecen una ubicacion ideal ,situadas <span class="ubicacionTextoColor"> FRENTE AL
+                MAR</span>, sobre la Av. Gonzalez Martínez y a 2 cuadras de calle Brown, excelente lugar para disfrutar
+            en familia. Cuenta con terraza,
+            jardín, zona de parrilla, wifi gratis y estacionamiento privado gratuito.
 
         <div id="map" class="map"></div>
 
@@ -338,70 +343,38 @@
 
 
     <footer class="contacto" id="contacto">
-        <h2 class="tituloH1">CONTACTO</h2>
-        <div class="contactoContainer">
 
-            <!--Logo Instragram -->
-            <div>
-                <a href="https://www.instagram.com/veranopehuenco/" alt="instagram"><i
-                        class="fab fa-instagram  redesIconos " alt="enlace a instagram"></i>
-                </a>
-            </div>
-            <!-- Logo WhatsApp -->
-            <div>
-                <a href="https://wa.me/542914182420?text=Hola!%20Quisiera%20saber%20sobre%20..." alt="whatsapp"><i
-                        class="fab fa-whatsapp redesIconos " alt="enlace a whatsapp"></i></a>
-            </div>
-            <!-- Logo WhatsApp -->
-            <div>
-                <a href="https://wa.me/542914182420?text=Hola!%20Quisiera%20saber%20sobre%20..." alt="whatsapp"><i
-                        class="fab fa-whatsapp redesIconos " alt="enlace a whatsapp"></i></a>
-            </div>
-            <!--Logo Facebook -->
-            <div>
-                <a href="https://www.facebook.com/verano.pehuenco" alt="facebook"><i
-                        class="fab fa-facebook redesIconos " alt="enlace a facebook"></i></a>
-            </div>
-            <!--Logo GMaps -->
-            <div>
-                <a href="https://www.google.com.ar/maps/place/Balneario+Pehu%C3%A9n-C%C3%B3,+Buenos+Aires+Province/@-38.9963335,-61.5429753,16.5z/data=!4m5!3m4!1s0x95f2a157a53bd63b:0x1239090bdad7b22d!8m2!3d-39!4d-61.616667"
-                    alt="ubicacion"><i class="fas fa-map-marker-alt redesIconos" alt="enlace a google maps"></i></a>
-            </div>
-
-            <!-- <form action="https://formsubmit.co/nico.smael@gmail.com" method="POST"> -->
-            <!-- <form action="" class="contactoFormulario">
-                <input class="contactoFormularioInputs" type="text" name="Nombre" placeholder="Apellido y Nombre"
-                    required>
-                <input class="contactoFormularioInputs" type="email" name="email" placeholder="Correo Electronico"
-                    required>
-                <input class="contactoFormularioInputs" type="number" name="Telefono" placeholder="Telefono" required>
-                <input class="contactoFormularioInputs" type="number" name="Cantidad de Personas"
-                    placeholder="Cantidad de Personas" required>
-                <input class="contactoFormularioInputs" type="number" name="Noches" placeholder="Cantidad de Noches"
-                    required>
-                <input class="contactoFormularioInputs" type="text" name="Fecha Ingreso"
-                    placeholder="Fecha de Ingreso  Dia/Mes/Año" required>
-                <input class="contactoFormularioInputs" type="text" name="Fecha Salida"
-                    placeholder="Fecha de Salida  Dia/Mes/Año" required>
-                <input class="contactoFormularioInputs contactoFormularioInputsMensaje" type="text" name="Mensaje"
-                    placeholder="Mensaje" required> -->
-            <!-- <input type="email" name="email" required> -->
-
-            <!-- FORMA EN QUE LLEGAN LOS MAILS -->
-            <!-- <input type="hidden" name="_template" value="table"> -->
-
-            <!-- PREVENIR SPAMS -->
-            <!-- <input type="text" name="_honey" style="display:none"> -->
-
-            <!-- NO CAPTCHA -->
-            <!-- <input type="hidden" name="_captcha" value="false"> -->
-
-            <!-- MENSAJE AUTOMATICO DE RESPUESTA -->
-            <!-- <input type="hidden" name="_autoresponse" value="your custom message">
-                <button class="contactoFormularioSubmit" type="submit">Send</button>
-            </form> -->
+        <!--Logo Instragram -->
+        <div>
+            <a href="https://www.instagram.com/veranopehuenco/" alt="instagram"><img class="redesIconos"
+                    src="./imgs/logos/1.png" alt="">
+            </a>
         </div>
+        <!-- Logo WhatsApp -->
+        <div>
+            <a href="https://wa.me/542914123018?text=Hola!%20Quisiera%20saber%20sobre%20..." alt="whatsapp"><img
+                    class="redesIconos" src="./imgs/logos/2.png" alt=""></a>
+        </div>
+        <!-- Logo WhatsApp -->
+        <div>
+            <a href="https://wa.me/542914489137?text=Hola!%20Quisiera%20saber%20sobre%20..." alt="whatsapp"><img
+                    class="redesIconos" src="./imgs/logos/2.png" alt=""></a>
+        </div>
+        <!--Logo Facebook -->
+        <div>
+            <a href="https://www.facebook.com/verano.pehuenco" alt="facebook"><img class="redesIconos"
+                    src="./imgs/logos/3.png" alt=""></a>
+        </div>
+        <!--Logo Facebook -->
+        <div>
+            <a href="https://www.facebook.com/verano.pehuenco" alt="facebook"><img class="redesIconos"
+                    src="./imgs/logos/4.svg" alt=""></a>
+        </div>
+
+
+
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

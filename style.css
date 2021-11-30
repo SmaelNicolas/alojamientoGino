@@ -252,6 +252,9 @@ body {
     font-size: 2.2rem;
     margin: 5px; }
 
+.navBarLogoLink {
+  text-decoration: none; }
+
 .navBarLogoImg {
   width: 40px;
   height: 40px; }
@@ -403,12 +406,14 @@ body {
   align-items: center;
   border-top: 2px solid rgba(131, 251, 247, 0.89); }
   .serviciosContenedor {
-    width: 100%;
+    width: 70%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px; }
+    grid-template-columns: repeat(auto-fit, 170px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center; }
     .serviciosContenedorItem {
-      width: 200px;
+      width: 170px;
       height: 50px;
       justify-self: center;
       display: flex;
@@ -427,10 +432,9 @@ body {
         color: #0d0d0f;
         text-align: end; }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 800px) {
   .serviciosContenedor {
-    width: 60%;
-    gap: 20px; } }
+    width: 100%; } }
 
 .ubicacion {
   width: 100%;
@@ -447,52 +451,28 @@ body {
     padding: 10px;
     letter-spacing: 1px;
     font-size: 20px;
+    text-align: justify;
+    padding: 80px 50px;
     text-align: justify; }
+    .ubicacionTextoColor {
+      color: rgba(0, 0, 255, 0.76);
+      background-color: yellow; }
 
 .contacto {
   width: 100%;
   height: auto;
   padding: 20px 0px 100px 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-top: 2px solid rgba(131, 251, 247, 0.89); }
   .contactoContainer {
     width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 50px; }
-  .contactoRedes {
-    min-width: 300px;
-    max-width: 500px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    color: white; }
   .contacto .redesIconos {
-    color: green;
-    font-size: 50px; }
-  .contacto .contactoFormulario {
-    min-width: 300px;
-    max-width: 900px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #0d0d0f;
-    gap: 3px; }
-    .contacto .contactoFormularioInputs {
-      width: 100%;
-      height: 30px;
-      padding-left: 10px; }
-      .contacto .contactoFormularioInputsMensaje {
-        height: 150px; }
-    .contacto .contactoFormularioSubmit {
-      width: 100px; }
+    width: 50px;
+    height: 50px; }

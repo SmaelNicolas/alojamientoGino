@@ -5,7 +5,7 @@ $(function () {
 		message: " ",
 		showPopup: true,
 		showOnIE: false,
-		headerTitle: "Bienvenido!",
+		headerTitle: "Bienvenido a Pinar del Este!",
 		headerColor: "#25D366",
 		backgroundColor: "#25D366",
 		buttonImage: '<img src="whatsapp.svg" />',
