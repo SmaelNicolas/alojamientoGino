@@ -13,7 +13,7 @@ body {
 
 @font-face {
   font-family: Cardiff;
-  src: url(../../font/Autolinker.otf); }
+  src: url(./../../font/Autolinker.otf); }
 
 @font-face {
   font-family: "Manrope", sans-serif; }
