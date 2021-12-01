@@ -140,7 +140,8 @@ body {
         text-align: center; }
       .gliderDivsPersonaBandera {
         width: 40px;
-        height: 20px; }
+        height: 20px;
+        padding-left: 5px; }
     .gliderDivsTexto {
       width: 90%;
       height: 250px;
@@ -485,7 +486,7 @@ body {
 .galeriaContainer {
   width: 100%;
   height: auto;
-  padding: 20px 0px 100px 0px; }
+  padding: 20px 0px 50px 0px; }
 
 .carousel {
   width: 60vw;
@@ -527,7 +528,7 @@ body {
 .servicios {
   width: 100%;
   height: auto;
-  padding: 20px 0px 100px 0px;
+  padding: 20px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -566,28 +567,32 @@ body {
 .ubicacion {
   width: 100%;
   height: auto;
-  padding: 20px 0px 100px 0px;
+  padding: 20px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .ubicacionTexto {
     min-width: 310px;
-    max-width: 1100px;
+    width: 70%;
     padding: 10px;
     letter-spacing: 1px;
     font-size: 20px;
     text-align: justify;
-    padding: 80px 50px;
+    padding: 20px 50px;
     text-align: justify; }
     .ubicacionTextoColor {
       color: rgba(0, 0, 255, 0.76);
       background-color: yellow; }
 
+@media only screen and (max-width: 800px) {
+  .ubicacionTexto {
+    width: 100%;
+    padding: 20px 10px; } }
+
 .contacto {
   width: 100%;
-  height: auto;
-  padding: 20px 0px 100px 0px;
+  height: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -600,4 +605,5 @@ body {
     gap: 50px; }
   .contacto .redesIconos {
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    align-self: center; }
