@@ -8,7 +8,7 @@ $(function () {
 		headerTitle: "Bienvenido a Pinar del Este!",
 		headerColor: "#25D366",
 		backgroundColor: "#25D366",
-		buttonImage: '<img src="whatsapp.svg" />',
+		buttonImage: '<img src="./imgs/logos/whatsapp.svg" />',
 	});
 });
 
