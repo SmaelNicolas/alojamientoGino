@@ -17,6 +17,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script src="./glider.js"></script>
 
@@ -31,35 +40,51 @@
 
 <body>
 
-    <div class="aviso" id="top">Check In: 13:00 a 22:00 / Check Out: 00:00 a 10:00</div>
+    <div class="aviso" id="top">Check In: 13:00 / Check Out: 10:00</div>
 
 
-    <nav class="navBar" id="navbar">
-        <a class="navBarLogoLink" href="#top">
-            <div class="navBarLogo">
-                <h1 class="navBarLogoTexto">Pinar del Este</h1>
-            </div>
-        </a>
-        <div class="navBarMenuIcon" id="menuButton">
-            <span class="navBarMenuIconSpan"></span>
-            <span class="navBarMenuIconSpan"></span>
-            <span class="navBarMenuIconSpan"></span>
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#">Pinar del Este <span class="navbar-brandSubs">Pehuen-Co - Argentina</span></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars iconToggle"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#container">Galeria <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cabañas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Casa</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#ubicacion">Ubicación</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+
+
+            </ul>
+
         </div>
-        <ul class="navBarLista">
-            <li class="navBarListaLi"><a class="navBarListaLink" href="#galeria">Galeria</a></li>
-            <li class="navBarListaLi"><a class="navBarListaLink" href="#servicios">Servicios</a></li>
-            <li class="navBarListaLi"><a class="navBarListaLink" href="#ubicacion">Ubicación</a></li>
-            <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Redes</a></li>
-        </ul>
-
     </nav>
-    <ul class="navBarListaResponsive" id="navBarLista">
-        <li class="navBarListaLi"><a class="navBarListaLink" href="#galeria">Galeria</a></li>
-        <li class="navBarListaLi"><a class="navBarListaLink" href="#servicios">Servicios</a></li>
-        <li class="navBarListaLi"><a class="navBarListaLink" href="#ubicacion">Ubicación</a></li>
-        <li class="navBarListaLi"><a class="navBarListaLink" href="#contacto">Redes</a></li>
-    </ul>
-    <!--Waves Container-->
+
+    <!-- Waves Container-->
     <div class="wavesContainer">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -74,140 +99,26 @@
             </g>
         </svg>
     </div>
-    <!--Waves end-->
+    <!--Waves end -->
 
-    <section class="galeriaContainer" id="galeria">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                    aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                    aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
-                    aria-label="Slide 9"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
-                    aria-label="Slide 10"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
-                    aria-label="Slide 11"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
-                    aria-label="Slide 12"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
-                    aria-label="Slide 13"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13"
-                    aria-label="Slide 14"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14"
-                    aria-label="Slide 15"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15"
-                    aria-label="Slide 16"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16"
-                    aria-label="Slide 17"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17"
-                    aria-label="Slide 18"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18"
-                    aria-label="Slide 19"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="19"
-                    aria-label="Slide 20"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="20"
-                    aria-label="Slide 21"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                    aria-label="Slide 22"></button>
-
+    <div id="container">
+        <div id="galleryView">
+            <div id="galleryContainer">
+                <div id="leftView"></div>
+                <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+                <a id="linkTag">
+                    <div id="mainView"></div>
+                </a>
+                <div id="rightView"></div>
+                <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/2.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item active">
-                    <img src="./imgs/cabañas/1.jpg" class="d-block w-100 carousel-item-img " alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/3.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/4.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/5.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/6.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/7.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/8.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/9.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/10.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/cabañas/11.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/casa/1.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/casa/2.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="./imgs/casa/4.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="./imgs/casa/6.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/casa/7.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/casa/8.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/casa/9.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/casa/10.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/casa/11.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/casa/12.jpg" class="d-block w-100 carousel-item-img" alt="...">
-                </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </section>
+
+    </div>
 
 
     <section class="servicios" id="servicios">
+        <div class="serviciosCirculo"></div>
         <h1 class="tituloH1">SERVICIOS</h1>
 
         <div class="serviciosContenedor">
@@ -242,12 +153,7 @@
                     Cocina Equipada
                 </span>
             </p>
-            <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
-                        class="fas serviciosContenedorItemIcono fa-house-user"></i></span> <span
-                    class="serviciosContenedorItemTexto">
-                    Comedor
-                </span>
-            </p>
+
             <p class="serviciosContenedorItem"> <span class="serviciosContenedorItemIcon"><i
                         class="fas serviciosContenedorItemIcono fa-shower"></i></span> <span
                     class="serviciosContenedorItemTexto">
@@ -328,7 +234,7 @@
 
 
     <section class="ubicacion" id="ubicacion">
-        <h2 class="tituloH1">UBICACION</h2>
+        <h2 class="tituloH1Color">UBICACION</h2>
         <p class="ubicacionTexto">El complejo Pinar del Este se encuentran en Balneario Pehuén-Có, en la provincia de
             Buenos Aires, y ofrecen una ubicacion ideal ,situadas <span class="ubicacionTextoColor"> FRENTE AL
                 MAR</span>, sobre la Av. Gonzalez Martínez y a 2 cuadras de calle Brown, excelente lugar para disfrutar
@@ -348,18 +254,19 @@
     <div class="glider-contain" id="productos">
 
         <div class="glider">
-            <div class="gliderDivs">
+
+            <div class="gliderDivs drop-shadow">
                 <p class="gliderDivsPersona">
                     <span class="gliderDivsPersonaNombre">Pablo </span>
                     <span><img class="gliderDivsPersonaBandera" src="./imgs/logos/4.png" alt=""></span>
                 </p>
-                <p class="gliderDivsTexto">Todo estuvo excelente!!!!Los dueños del lugar estuvieron todo el tiempo
+                <p class="gliderDivsTexto">Todo estuvo excelente! Los dueños del lugar estuvieron todo el tiempo
                     atentos por si teníamos necesidad de algo,las
                     cabañas son muy prácticas y cómodas y están súper bien ubicadas frente al mar.El lugar es
                     simplemente
-                    maravilloso.Volveremos!!! Quedamos muy conformes y contentos!</p>
+                    maravilloso.Volveremos! Quedamos muy conformes y contentos!</p>
             </div>
-            <div class="gliderDivs">
+            <div class="gliderDivs drop-shadow">
                 <p class="gliderDivsPersona">
                     <span class="gliderDivsPersonaNombre">Ezequiel </span>
                     <span><img class="gliderDivsPersonaBandera" src="./imgs/logos/4.png" alt=""></span>
@@ -546,7 +453,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./map.js"></script>
-    <script src="./script.js"></script>
+    <script src="./carousel.js"></script>
+    <script src="./closeMenu.js"></script>
     <script src="./wtsp.js"></script>
 
 </body>
