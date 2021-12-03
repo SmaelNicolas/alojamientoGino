@@ -609,7 +609,7 @@ body {
     padding-top: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 170px);
-    gap: 30px;
+    gap: 15px;
     justify-content: center;
     align-items: center; }
     .serviciosContenedorItem {
