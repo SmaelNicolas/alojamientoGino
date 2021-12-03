@@ -560,22 +560,22 @@ body {
 
 .servicios {
   width: 100%;
-  height: auto;
+  height: 600px;
   position: relative;
   margin-top: 100px;
-  padding: 20px 0px 50px 0px;
+  padding: 100px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #4a536b; }
   .serviciosCirculo {
-    position: absolute;
-    top: -100px;
-    height: 100px;
     width: 100%;
-    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#4a536b), color-stop(0.49, #4a536b), color-stop(0.51, #fff), to(white));
-    -webkit-background-size: 49px 100%; }
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: -100px;
+    background: linear-gradient(to left bottom, #fff 49%, #4a536b 50%); }
   .serviciosContenedor {
     width: 70%;
     display: grid;
@@ -605,19 +605,29 @@ body {
         padding-right: 5px; }
 
 @media only screen and (max-width: 800px) {
+  .servicios {
+    padding-top: 300px; }
   .serviciosContenedor {
     width: 100%; } }
 
 .ubicacion {
   width: 100%;
   height: auto;
+  position: relative;
+  margin-top: 100px;
   padding: 20px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f6d26a;
-  background: linear-gradient(111deg, #f6d26a 0%, #ff9f00 52%, #fbc564 100%); }
+  background-color: #f89b04; }
+  .ubicacionSeparador {
+    top: -100px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right bottom, #4a536b 49%, #f89b04 50%), linear-gradient(-50deg, #f89b04 16px, #000 0); }
   .ubicacionTexto {
     min-width: 310px;
     width: 70%;
