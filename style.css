@@ -685,6 +685,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .contactoInfo {
+    font-size: calc(1rem + 1vw);
+    text-align: center;
+    font-weight: 500;
+    color: #f89b04;
+    padding: 20px; }
   .contactoContainer {
     width: 95%;
     display: flex;
