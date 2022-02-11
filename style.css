@@ -665,10 +665,11 @@ body {
     text-align: justify;
     color: #373d4d;
     background-color: rgba(0, 0, 0, 0.041);
-    box-shadow: 0px 0px 8px -1px black inset;
-    -webkit-box-shadow: 0px 0px 4px -1px black inset;
-    -moz-box-shadow: 0px 0px 8px -1px black inset;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border-bottom: 5px solid #4a536b;
+    border-left: 5px solid #4a536b;
+    border-top: 2px solid #4a536b;
+    border-right: 2px solid #4a536b; }
     .ubicacionTextoColor {
       font-weight: bold;
       padding: 0px 5px;
